@@ -1,8 +1,5 @@
 const http = require('node:http');
 
-const hostname = '127.0.0.1';
-const port = 1245;
-
 // eslint-disable-next-line no-unused-vars
 const app = http.createServer((req, res) => {
   res.statusCode = 200;
@@ -11,7 +8,7 @@ const app = http.createServer((req, res) => {
 });
 
 app.listen('1245', () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+  console.log('...');
 });
 
 module.exports = app;
